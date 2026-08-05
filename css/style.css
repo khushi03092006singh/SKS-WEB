@@ -2583,4 +2583,30 @@ section[id] {
   .map-placeholder {
     height: 280px;
   }
+
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .hero-image {
+    order: 2;
+  }
+
+  .hero-bg {
+    background-size: cover;
+    background-position: center;
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "SKS Artist Studio",
+  "short_name": "SKS Studio",
+  "description": "Portraits, Pencil Sketches, Wall Murals & Art Classes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F1EE",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

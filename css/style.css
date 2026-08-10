@@ -511,7 +511,7 @@ section[id] {
 
 /* ─── 9. HERO SECTION ──────────────────────────────────────── */
 #hero {
-  min-height: 100vh;
+  min-height: var(--hero-min-height, 100vh);
   display: flex;
   align-items: center;
   padding-top: var(--header-height, 96px);

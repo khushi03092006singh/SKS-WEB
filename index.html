@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1280" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary Meta -->
@@ -1846,6 +1846,17 @@
     </div>
   </div>
 
+  <script>
+    // Fix hero min-height on mobile: viewport meta width=1280 makes 100vh
+    // enormous (virtual px). screen.width is always the real physical width.
+    (function () {
+      if (window.screen.width < 1024) {
+        // Real visible height in CSS pixels (physical px / DPR)
+        var realH = Math.round(window.screen.height / window.devicePixelRatio);
+        document.documentElement.style.setProperty('--hero-min-height', realH + 'px');
+      }
+    })();
+  </script>
   <script src="js/main.js" defer></script>
 </body>
 

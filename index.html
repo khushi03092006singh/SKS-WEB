@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1280" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary Meta -->
@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;1,700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,700;1,700&family=Cinzel+Decorative:wght@400;700;900&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
@@ -143,7 +143,7 @@
             <span class="eyebrow">Welcome To</span>
             <h1 class="hero-heading" id="hero-heading">
               <span class="sks-title">SKS</span>
-              <span class="line-accent">Artist Studio</span>
+              <span class="line-accent">Artistic Studio</span>
             </h1>
             <p class="hero-subtitle">
               Creating Timeless Art, Sketches &amp; Creative Experiences. Where every stroke tells a story and every
@@ -220,7 +220,7 @@
           <div class="artist-image-col artist-reveal">
             <div class="artist-avatar-wrapper">
               <div class="artist-avatar-glow" aria-hidden="true"></div>
-              <img src="assets/images/artist-suryansh.jpg"
+              <img src="assets/images/artist-sks.jpg"
                 alt="Suryansh Kumar Singh — Master Artist & Founder at SKS Artist Studio" class="artist-avatar-img"
                 loading="lazy" />
               <div class="artist-badge-tag" aria-hidden="true">
@@ -300,8 +300,6 @@
 
           <!-- Image side -->
           <div class="about-image-wrap reveal">
-            <div class="about-brush-deco" aria-hidden="true"></div>
-            <div class="about-brush-deco-2" aria-hidden="true"></div>
             <img src="assets/images/artwork-sadhu.jpg"
               alt="Original portrait painting of an Indian Sadhu by SKS Artist Studio" class="about-main-img"
               loading="lazy" />
@@ -1846,17 +1844,6 @@
     </div>
   </div>
 
-  <script>
-    // Fix hero min-height on mobile: viewport meta width=1280 makes 100vh
-    // enormous (virtual px). screen.width is always the real physical width.
-    (function () {
-      if (window.screen.width < 1024) {
-        // Real visible height in CSS pixels (physical px / DPR)
-        var realH = Math.round(window.screen.height / window.devicePixelRatio);
-        document.documentElement.style.setProperty('--hero-min-height', realH + 'px');
-      }
-    })();
-  </script>
   <script src="js/main.js" defer></script>
 </body>
 
